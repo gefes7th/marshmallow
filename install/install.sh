@@ -13,7 +13,7 @@ msg() {
 run_main(){
 
     msg "In process opkg update"
-    opkg update || { echo "opkg update failed"; exit 1; }
+    sudo apt-get update || { echo "apt-get update"; exit 1; }
     msg "Done opkg update"
     
 }
