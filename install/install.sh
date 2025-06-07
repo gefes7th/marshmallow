@@ -1,5 +1,5 @@
 #!/bin/sh
-
+echo "1"
 REPO="https://github.com/gefes7th/marshmallow"
 DOWNLOAD_DIR="/tmp/marshmallow"
 COUNT=3
