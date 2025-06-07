@@ -1,7 +1,7 @@
 #!/bin/sh
 
-REPO="https://api.github.com/repos/itdoginfo/podkop/releases/latest"
-DOWNLOAD_DIR="/tmp/podkop"
+REPO="https://github.com/gefes7th/marshmallow"
+DOWNLOAD_DIR="/tmp/marshmallow"
 COUNT=3
 
 rm -rf "$DOWNLOAD_DIR"
