@@ -7,4 +7,4 @@ COUNT=3
 rm -rf "$DOWNLOAD_DIR"
 mkdir -p "$DOWNLOAD_DIR"
 
-printf "NockNock"
+sudo apt-get update
