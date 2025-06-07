@@ -12,9 +12,17 @@ msg() {
 }
 run_main(){
 
-    msg "In process apt update"
-    sudo apt update -y && sudo apt upgrade -y || { echo "sudo apt update -y && sudo apt upgrade -y"; exit 1; }
-    msg "Done apt update"
+    msg "In process"
+    #sudo apt update -y && sudo apt upgrade -y || { echo "sudo apt update -y && sudo apt upgrade -y"; exit 1; }
+    #Устанавливаем docker, все приложения будут крутиться в контейнерах 
+	# Add Docker's official GPG key:
+	sudo apt-get update
+	sudo apt-get install ca-certificates curl
+	sudo install -m 0755 -d /etc/apt/keyrings
+	sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+	sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+    msg "Done"
     
 }
 run_main
