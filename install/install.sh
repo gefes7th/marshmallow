@@ -12,9 +12,9 @@ msg() {
 }
 run_main(){
 
-    msg "In process opkg update"
-    sudo apt-get update || { echo "apt-get update"; exit 1; }
-    msg "Done opkg update"
+    msg "In process apt update"
+    sudo apt update -y && sudo apt upgrade -y || { echo "sudo apt update -y && sudo apt upgrade -y"; exit 1; }
+    msg "Done apt update"
     
 }
 run_main
